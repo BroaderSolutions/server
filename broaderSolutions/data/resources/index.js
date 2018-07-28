@@ -4,7 +4,7 @@
  */
 
 
-let _userObject = require('./user');
+let _user = require('./user');
 
 
 module.exports = {
@@ -12,5 +12,12 @@ module.exports = {
   /**
    * The UserObject resource.
    */
-  UserObject: _userObject
+  User: _user,
+  
+  /**
+   * List of all available resources.
+   */
+  resourceList: [
+    'User'
+  ]
 };
