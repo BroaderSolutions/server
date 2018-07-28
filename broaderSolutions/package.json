@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "Grant Broadwater",
   "dependencies": {
-    "bs-data": "file:data"
+    "bs-data": "file:data",
+    "bs-routes": "file:routes"
   }
 }

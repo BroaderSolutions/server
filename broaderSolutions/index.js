@@ -4,6 +4,7 @@
  */
 
 let _data = require('bs-data');
+let _routes = require('bs-routes');
 let _constants = require('./constants');
 
 module.exports = {
@@ -18,5 +19,11 @@ module.exports = {
   /**
    * Data for BroaderSolutions technologies.
    */
-  Data: _data
+  Data: _data,
+  
+  
+  /**
+   * Routes for BroaderSolutions technologies.
+   */
+  Routes: _routes
 };

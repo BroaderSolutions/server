@@ -1,0 +1,7 @@
+{
+  "name": "bs-routes",
+  "version": "1.0.0",
+  "description": "Foundation routes for BroaderSolution's technologies.",
+  "main": "index.js",
+  "author": "Grant Broadwater"
+}

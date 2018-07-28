@@ -19,8 +19,11 @@ app.use( express.urlencoded( { extended: false } ) );
 app.use( cookieParser() );
 app.use( express.static( path.join( __dirname, 'public' ) ) );
 
-app.use( '/', indexRouter );
-app.use( '/users', usersRouter );
+app.use( '/old', indexRouter );
+app.use( '/old/users', usersRouter );
+
+let bs = require( 'broader-solutions' );
+app.use( '/', bs.Routes.apiRouter );
 
 // catch 404 and forward to error handler
 app.use( function ( req, res, next ) {
@@ -40,17 +43,4 @@ app.use( function ( err, req, res, next ) {
 
 module.exports = app;
 
-let bs = require( 'broader-solutions' );
-let resources = bs.Data.Resources;
-resources.resourceList.forEach( function ( resourceIdentifier ) {
 
-  console.log( "Resource: " + resourceIdentifier + "\n\tFields");
-  
-  let res = resources[resourceIdentifier];
-  res.fields.forEach( function ( resFieldIdentifier ) {
-  
-    console.log( "\t\t" + resFieldIdentifier );
-    
-  } );
-
-} );
