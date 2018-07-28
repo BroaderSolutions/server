@@ -14,9 +14,9 @@ module.exports.moduleName = "user";
  * Constructs a new User Object.
  * @constructor
  */
-UserObject = function(_provideId, _displayName) {
+UserObject = function(_providerId, _displayName) {
   return {
-    providerId: _provideId,
+    providerId: _providerId,
     displayName: _displayName
   }
 };

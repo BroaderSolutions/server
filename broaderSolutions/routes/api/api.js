@@ -10,32 +10,38 @@ data.Resources.resourceList.forEach( function( resourceType ) {
   "use strict";
   
   
-  router.get( '/' + resourceType, function ( req, res, next ) {
+  router.get( '/' + resourceType + '/:resourceId', function ( req, res, next ) {
+    
+    let resourceId = req.params.resourceId;
   
-    res.end( 'get ' + resourceType );
+    res.end( 'get ' + resourceType + ' ' + resourceId );
     
   } );
   
   
-  router.post( '/' + resourceType, function ( req, res, next ) {
-    
-    res.end( 'post ' + resourceType );
+  router.post( '/' + resourceType + '/:resourceId', function ( req, res, next ) {
+  
+    let resourceId = req.params.resourceId;
+  
+    res.end( 'post ' + resourceType + ' ' + resourceId );
     
   } );
   
   
-  router.delete( '/' + resourceType, function ( req, res, next ) {
-    
-    res.end( 'delete ' + resourceType );
+  router.delete( '/' + resourceType + '/:resourceId', function ( req, res, next ) {
+  
+    let resourceId = req.params.resourceId;
+  
+    res.end( 'delete ' + resourceType + ' ' + resourceId );
     
   } );
   
 } );
 
-router.use( '/', function( req, res, next ) {
+router.get( '/', function( req, res, next ) {
   "use strict";
   
-  res.end( "Return api swaggg" );
+  res.end( "API entrypoint" );
   
 } );
 
