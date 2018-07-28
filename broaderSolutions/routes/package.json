@@ -6,5 +6,8 @@
   "author": "Grant Broadwater",
   "scripts": {
     "preinstall": "rm-local-modules"
+  },
+  "dependencies": {
+    "bs-data": "file:../data"
   }
 }

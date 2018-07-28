@@ -4,9 +4,6 @@ let path = require( 'path' );
 let cookieParser = require( 'cookie-parser' );
 let logger = require( 'morgan' );
 
-let indexRouter = require( './routes/index' );
-let usersRouter = require( './routes/users' );
-
 let app = express();
 
 // view engine setup
@@ -18,9 +15,6 @@ app.use( express.json() );
 app.use( express.urlencoded( { extended: false } ) );
 app.use( cookieParser() );
 app.use( express.static( path.join( __dirname, 'public' ) ) );
-
-app.use( '/old', indexRouter );
-app.use( '/old/users', usersRouter );
 
 let bs = require( 'broader-solutions' );
 app.use( '/api', bs.Routes.apiRouter );
