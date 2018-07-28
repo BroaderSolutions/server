@@ -1,0 +1,7 @@
+{
+  "name": "bs-data-resources",
+  "version": "1.0.0",
+  "description": "Foundation data resources for BroaderSolution's technologies.",
+  "main": "index.js",
+  "author": "Grant Broadwater"
+}

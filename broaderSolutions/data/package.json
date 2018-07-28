@@ -1,0 +1,10 @@
+{
+  "name": "bs-data",
+  "version": "1.0.0",
+  "description": "Foundation data for BroaderSolution's technologies.",
+  "main": "index.js",
+  "author": "Grant Broadwater",
+  "dependencies": {
+    "bs-data-resources": "file:resources"
+  }
+}
