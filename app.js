@@ -23,7 +23,7 @@ app.use( '/old', indexRouter );
 app.use( '/old/users', usersRouter );
 
 let bs = require( 'broader-solutions' );
-app.use( '/', bs.Routes.apiRouter );
+app.use( '/api', bs.Routes.apiRouter );
 
 // catch 404 and forward to error handler
 app.use( function ( req, res, next ) {

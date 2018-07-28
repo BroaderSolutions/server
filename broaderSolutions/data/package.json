@@ -2,8 +2,11 @@
   "name": "bs-data",
   "version": "1.0.0",
   "description": "Foundation data for BroaderSolution's technologies.",
-  "main": "index.js",
+  "main": "data.js",
   "author": "Grant Broadwater",
+  "scripts": {
+    "preinstall": "rm-local-modules"
+  },
   "dependencies": {
     "bs-data-resources": "file:resources"
   }

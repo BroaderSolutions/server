@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "preinstall": "rm-local-modules",
     "start": "node ./bin/www",
     "debug": "DEBUG=BroaderSolutions:* node ./bin/www"
   },

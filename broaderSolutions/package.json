@@ -2,8 +2,11 @@
   "name": "broader-solutions",
   "version": "1.0.0",
   "description": "Foundation for BroaderSolution's technologies.",
-  "main": "index.js",
+  "main": "broaderSolutions.js",
   "author": "Grant Broadwater",
+  "scripts": {
+    "preinstall": "rm-local-modules"
+  },
   "dependencies": {
     "bs-data": "file:data",
     "bs-routes": "file:routes"

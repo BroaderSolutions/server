@@ -2,6 +2,9 @@
   "name": "bs-routes",
   "version": "1.0.0",
   "description": "Foundation routes for BroaderSolution's technologies.",
-  "main": "index.js",
-  "author": "Grant Broadwater"
+  "main": "routes.js",
+  "author": "Grant Broadwater",
+  "scripts": {
+    "preinstall": "rm-local-modules"
+  }
 }
