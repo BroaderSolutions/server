@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "debug": "DEBUG=BroaderSolutions:* node ./bin/www"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "broader-solutions": "file:broaderSolutions",

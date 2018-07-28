@@ -1,13 +1,13 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+let createError = require('http-errors');
+let express = require('express');
+let path = require('path');
+let cookieParser = require('cookie-parser');
+let logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+let indexRouter = require('./routes/index');
+let usersRouter = require('./routes/users');
 
-var app = express();
+let app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -39,12 +39,3 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
-
-
-/* Demonstrate how to require local modules */
-let bs = require('broader-solutions');
-let data = bs.Data;
-let resources = data.Resources;
-let UserObject = resources.UserObject;
-let user1 = UserObject("123", "User 1.02");
-console.log(user1.displayName);
